@@ -985,6 +985,7 @@ describe("FlatESLint", () => {
 
             it("should throw an error when given a directory with all eslint excluded files in the directory", async () => {
                 eslint = new FlatESLint({
+                    cwd: getFixturePath(),
                     ignorePath: getFixturePath(".eslintignore")
                 });
 
